@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Ice Cream Survey</title>
+  <style>
+    body {
+        background-color: pink;
+    }
+    h1{
+        text-align: center;
+        font-family:cursive;
+    }
+    #labTitle{
+        font-family: fantasy;
+    }
+
+    form
+    {
+      background-color: lightyellow;
+    }
+
+  </style>
+
+</head>
+<body>
+  <h1 id="labTitle">Ice Cream Flavor Survey</h1>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label>Favorite Flavors:</label><br>
+    <input type="checkbox" name="flavor" value="vanilla"> Vanilla<br>
+    <input type="checkbox" name="flavor" value="chocolate"> Chocolate<br>
+    <input type="checkbox" name="flavor" value="strawberry"> Strawberry<br><br>
+
+    <label>Preferred Toppings:</label><br>
+    <input type="checkbox" name="topping" value="sprinkles"> Sprinkles<br>
+    <input type="checkbox" name="topping" value="cherries"> Cherries<br>
+    <input type="checkbox" name="topping" value="caramel"> Caramel<br><br>
+
+    <label>Cup or Cone?</label><br>
+    <input type="radio" name="container" value="cup"> Cup<br>
+    <input type="radio" name="container" value="cone"> Cone<br><br>
+
+    <button type="submit">Submit Survey</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>INST377-Lab2-PartB-Page1</title>
+
+
+    <style>
+        
+        #labTitle{
+            text-align: center;
+            font-family: fantasy;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-size:20px;
+
+        }
+
+        body{
+            background-color: plum;
+        }
+
+        .form{
+            margin:20px;
+            font-size: larger;
+        }
+
+
+        button[type="submit"]{
+            background-color:green;
+            color: white;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="labTitle">INST377 - Lab2 - Information Form</h1>
+    <form action="AAlimi_Page2.html">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" phone="phone"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" email="email"><br><br>
+        
+        </div>
+
+            <button type="submit">Submit</button>
+
+    </form>
+
+
+</body>
+</html>
