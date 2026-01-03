@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Guess the Number</title>
+</head>
+<body>
+  <h1>Guess the Number Game</h1>
+  <p>I picked a number between 1 and 10. Can you guess it?</p>
+  <input type="number" id="guessInput" min="1" max="10">
+  <button onclick="checkGuess()">Guess!</button>
+  <p id="result"></p>
+
+  <script>
+    // Problem: The program generates a secret number (1–10).
+    // The user guesses and clicks the button.
+    // Show "Correct!" if they guessed right, otherwise "Try again".
+
+    let secret = Math.floor(Math.random() * 10) + 1; // random number
+
+    function checkGuess() {
+      let guess = parseInt(document.getElementById("guessInput").value);
+
+    if (guess == secret){
+      document.getElementById("result").innerText = "Correct!";
+     }
+    else{
+      document.getElementById("result").innerText = "Try Again!";
+     }
+    }
+  </script>
+</body>
+</html>

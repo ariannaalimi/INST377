@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>Light Switch</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Light Switch</h1>
+  <button onclick="toggleLight()" id="switchBtn">Turn On Light</button>
+
+  <script>
+    // Problem: Start with a "dark room".
+    // Each time the button is clicked, toggle between light and dark mode.
+
+    let lightOn = false; // track if light is on or off
+
+    function toggleLight() {
+
+        let button = document.getElementById("switchBtn")
+		
+        if (lightOn == false){
+
+            document.body.style.backgroundColor = "white";
+            document.body.style.color = "black";
+            button.innerText = "Turn Off Light";
+            lightOn = true;
+
+        }
+
+        else{
+
+            document.body.style.backgroundColor = "black";
+            document.body.style.color = "white";
+            button.innerText = "Turn On Light";
+            lightOn = false
+
+        }
+
+    }
+  </script>
+</body>
+</html>

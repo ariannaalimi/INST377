@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Mirror Text</title>
+</head>
+<body>
+  <h1>Type and See the Mirror</h1>
+  <input type="text" id="textInput" oninput="mirrorText()" placeholder="Type here...">
+  <p>Mirrored: <span id="mirror"></span></p>
+
+  <script>
+    // Problem: As the user types into the input box,
+    // show the text backwards ("mirrored") in the <span>.
+
+    function mirrorText() {
+ 		let text = document.getElementById("textInput").value
+        
+        document.getElementById("mirror").innerText= text.split("").reverse().join("")
+
+    }
+  </script>
+</body>
+</html>

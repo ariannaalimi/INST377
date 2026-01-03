@@ -1,0 +1,31 @@
+<html>
+<head>
+  <title>Emoji Toggle</title>
+</head>
+<body>
+  <h1>Click to Toggle Emoji</h1>
+  <button onclick="toggleEmoji()">Toggle Emoji</button>
+  <p id="emojiDisplay">😀</p>
+
+  <script>
+    // Problem: When the button is clicked, 
+    // toggle between two emojis (😀 and 😎).
+
+    let happy = true; // tracks which emoji is showing
+
+    function toggleEmoji() {
+		let toggle = document.getElementById("emojiDisplay");
+
+        if (happy == true){
+            toggle.innerText = "😎";
+            happy = false;
+        }
+        else{
+            toggle.innerText = "😀";
+            happy = true;
+        }
+
+    }
+  </script>
+</body>
+</html>

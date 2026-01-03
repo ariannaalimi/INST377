@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>INST377- Lab 4</title>
+    <link rel="stylesheet" href="Lab4_CSS.css">
+</head>
+
+    <body>
+        <div class = "header">
+            <h1 id="theHeader">INST377 - Lab 4</h1>
+        </div>
+
+        <div class = "name">
+            <form onsubmit="sayHi();">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Alert Me!</button>
+            </form>
+        </div>
+
+
+
+        <div class = "change-color">
+            <button onclick="changeColor()" id="changeColor">Change Color</button>
+        </div>
+
+
+
+        <div class = "text-tester">
+            <form onsubmit="textTester();">
+                <label for="text_tester">Text Tester:</label>
+                <input type="text" id="text_tester" name="text_tester" required>
+                <button type="submit">Validate Text</button>
+            </form>
+        </div>
+
+
+        <div class ="add-text">
+            <button onclick="addText()" id="addText">Add Text</button>
+        </div>
+
+
+        <script>
+
+            let on_off = true;
+
+            function sayHi(){
+                name = document.getElementById('name').value;
+                alert("Hi " + name + "!");
+            }
+
+            function changeColor(){
+
+                if(on_off){
+                    document.body.style.backgroundColor = "pink";
+                    on_off = false;
+                }
+
+                else{
+                    document.body.style.backgroundColor = "lightblue";
+                    on_off = true;
+                }
+                
+            }
+
+            function textTester(){
+
+                text = document.getElementById('text_tester').value;
+
+                var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+                if (validation.test(text)){
+                    alert("This text is an invalid input")
+                }
+
+            }
+
+            function addText(){
+                const header = document.getElementById("theHeader");
+
+                header.textContent += " - Add Text";
+
+
+            }
+
+
+        </script>
+
+    </body>
+</html>

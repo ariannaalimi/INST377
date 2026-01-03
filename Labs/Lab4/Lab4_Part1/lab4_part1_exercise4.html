@@ -1,0 +1,30 @@
+<html>
+<head>
+  <title>Random Joke</title>
+</head>
+<body>
+  <h1>Need a Laugh?</h1>
+  <button onclick="showJoke()">Get a Joke</button>
+  <p id="jokeDisplay"></p>
+
+  <script>
+    // Problem: When the button is clicked,
+    // randomly pick a joke from the list and display it.
+
+    const jokes = [
+      "Why did the computer go to therapy? It had too many bugs 🐞.",
+      "Why don’t programmers like nature? Too many bugs!",
+      "What’s a programmer’s favorite hangout place? The Foo Bar.",
+      "I told my computer I needed a break, and it froze. ❄️"
+    ];
+
+    function showJoke() {
+
+        index = Math.floor(Math.random() * jokes.length)
+        document.getElementById("jokeDisplay").innerText = jokes[index]
+
+ 
+    }
+  </script>
+</body>
+</html>
