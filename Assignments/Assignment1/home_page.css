@@ -1,0 +1,141 @@
+.header{
+    font-family: cursive;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+.navbar{
+    background-color: plum;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+
+.navbar a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 14px;
+}
+
+.navbar a:hover{
+    color:gray;
+}
+
+.navbar a.active {
+    color: purple;     
+}
+
+.navbar a.active:hover{
+    color:gray;
+}
+
+#main_section_title{
+    clear: both;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color:cornsilk;
+}
+
+main{
+    border: 2px solid black;
+    float: left;
+    width: 60%;
+
+}
+
+.sub_class_linkedin{
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.sub_class_linkedin .linkedin_logo img {
+    width: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.sub_class_linkedin .linkedin_logo img:hover {
+    transform: scale(1.1);
+}
+
+
+.sub_class_instagram{
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.sub_class_instagram .instagram_logo img {
+    width: 33px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.sub_class_instagram .instagram_logo img:hover {
+    transform: scale(1.1);
+}
+
+.sub_class_discord{
+    position: relative;
+    background-color: white;
+    margin: 10px;
+    padding: 5px;
+}
+
+.sub_class_discord .discord_logo img {
+    width: 35px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.sub_class_discord .discord_logo img:hover {
+    transform: scale(1.1);
+}
+
+
+.sub_section{
+    border: 2px solid black;
+    float: right;
+    width: 20%;
+    text-align: center;
+    background-color:lightblue;
+}
+
+.contact_button{
+    cursor:pointer;
+}
+
+.contact_button:hover {
+    background-color: lightgrey;
+}
+
+#contact_info{
+    margin: 10px
+}
+
+.footer{
+    clear: both;
+    font-family: cursive;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}

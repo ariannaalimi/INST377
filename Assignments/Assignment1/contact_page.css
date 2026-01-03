@@ -1,0 +1,56 @@
+.header{
+    font-family: cursive;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+.navbar{
+    background-color: plum;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+
+body{
+    background-color: rgb(247, 247, 221);
+}
+
+.navbar a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 14px;
+}
+
+.navbar a:hover{
+    color:gray;
+}
+
+.navbar a.active {
+    color: purple;     
+}
+
+.navbar a.active:hover{
+    color:gray;
+}
+
+
+#reachOut{
+    font-family: fantasy;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.footer{
+    clear: both;
+    font-family: cursive;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}

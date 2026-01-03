@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <title>INST377 - Games Page</title>
+    <link rel="stylesheet" href="games_page.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title">INST377 - Games Page</h1>
+    </div>
+
+    <nav class="navbar">
+        <a href="home_page.html">Home</a>
+        <a href="games_page.html" class="active"> Games</a>
+        <a href="contact_page.html">Contact Me</a>
+    </nav>
+
+
+    <h2 id="SubTitle">Rock, Paper, Scissors</h2>
+
+    <form id="gameForm" onsubmit="submitButton(); return false;">
+        <select name="game" id="game">
+            <option value="Rock">Rock</option>
+            <option value="Paper">Paper</option>
+            <option value="Scissors">Scissors</option>
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <div class="You_Choose">
+        <h3 id="your_choice">You Chose:</h3>
+        <div id="your_choice_value"></div>
+    </div>
+
+    <div class="Computer_Choose">
+        <h3 id="computer_choice">Computer Chose:</h3>
+        <div id="computer_choice_value"></div>
+    </div>
+
+
+    <footer class="footer">
+        <p>2025 Arianna's Website. All rights reserved</p>
+    </footer>
+
+
+
+
+    <script>
+
+        function submitButton() {
+
+            let options = ["Rock", "Paper", "Scissors", "Spock"];
+            let randomGen = Math.floor(Math.random() * options.length);
+            let computerChoice = options[randomGen]
+
+            let userInput = document.getElementById('game').value;
+
+            document.getElementById('your_choice_value').textContent = userInput;
+            document.getElementById('computer_choice_value').textContent = computerChoice;
+
+            const winsForUser = {
+                Rock: "Scissors",
+                Paper: "Rock",
+                Scissors: "Paper"
+            }
+
+            if (userInput === computerChoice) {
+                alert("Tie!");
+                document.body.style.backgroundColor = "blue";
+            }
+
+            else if (winsForUser[userInput] === computerChoice) {
+                alert("You Win!");
+                document.body.style.backgroundColor = "lightgreen";
+            }
+
+            else {
+                alert("You Lose!");
+                document.body.style.backgroundColor = "red";
+            }
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

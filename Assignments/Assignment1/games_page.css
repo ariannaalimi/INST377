@@ -1,0 +1,87 @@
+.header{
+    font-family: cursive;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid aliceblue;
+}
+
+.navbar{
+    background-color: plum;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: fantasy;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.navbar a{
+    display: flex;
+    justify-content: center;
+    color: black;
+    padding: 14px;
+}
+
+.navbar a:hover{
+    color:gray;
+}
+
+.navbar a.active {
+    color: purple;     
+}
+
+.navbar a.active:hover{
+    color:gray;
+}
+
+.You_Choose{
+    float: left;
+    background-color: white;
+    border: 1px solid;
+    text-align: center;
+    width: 45%;
+}
+
+.You_Choose div{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+
+
+.Computer_Choose{
+    float: right;
+    background-color: white;
+    border: 1px solid;
+    text-align: center;
+    width: 45%;
+}
+
+.Computer_Choose div{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: cursive;
+    text-transform: uppercase;
+}
+
+
+
+.footer{
+    clear: both;
+    font-family: cursive;
+    text-align: center;
+    background-color: aliceblue;
+    border: 1px solid ;
+}

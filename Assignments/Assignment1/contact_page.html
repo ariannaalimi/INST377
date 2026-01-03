@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>INST377 - Contact Page</title>
+    <link rel="stylesheet" href="contact_page.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="title">INST377 - Contact Page</h1>
+    </div>
+
+    <h2 id = "reachOut">Have Questions or Concerns? Reach out to me!</h2>
+
+    <nav class="navbar">
+        <a href="home_page.html">Home</a>
+        <a href="games_page.html"> Games</a>
+        <a href="contact_page.html" class="active">Contact Me</a>
+    </nav>
+
+    <form onsubmit="return textValidator();">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> <br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required> <br><br>
+    
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="10" cols="50" required></textarea>
+
+
+
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+
+    <footer class="footer">
+        <p>2025 Arianna's Website. All rights reserved</p>
+    </footer>
+
+    <script>
+
+        function textValidator() {
+
+            text = document.getElementById('comments').value;
+
+            var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+            if (validation.test(text)) {
+                alert("This text is an invalid input");
+                return false;
+            }
+
+            else{
+                window.location.href = "success_page.html";
+                return false;
+            }
+
+        }
+
+
+    </script>
+
+
+</body>
+
+
+</html>
