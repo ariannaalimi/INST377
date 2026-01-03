@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>INST377-Final-Project</title>
+    <script src = "final_project.js" defer></script>
+    <link rel="stylesheet" href="final_project.css">
+
+</head>
+
+
+<body>
+  <h1>Ticketmaster Events</h1>
+
+  <form id = "search_form">
+
+    <p>Search by:</p>
+    <input type = "radio" id = "byCity" name = "searchType" value = "city" checked>
+    <label for= "byCity">City</label>
+
+    <input type = "radio" id = "byZip" name = "searchType" value = "zip">
+    <label for= "byZip">Zip Code</label>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required><br><br>
+    
+    <label for="zipCode">Zip Code:</label>
+    <input type="text" id="zipCode" name="zipCode"><br><br>
+  
+    <label for="radius">Radius (miles):</label>
+    <input type="number" id="radius" name="radius" required>
+    <br><br>
+
+    <button type = "submit">Search Events</button>
+
+  </form>
+
+
+
+  
+  <ul id="events-list"></ul>
+
+  

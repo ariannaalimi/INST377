@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>INST377 – Ticketmaster Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="final_project.js" defer></script>
+    <link rel="stylesheet" href="final_project.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <h1>Ticketmaster Events</h1>
+      <p class="subtitle">
+        Find concerts, sports, and more near you using city or zip code.
+      </p>
+    </header>
+
+    <main class="content">
+      
+      <section class="card card-form">
+        <h2 class="card-title">Search Events</h2>
+
+        <form id="search_form">
+          <fieldset class="search-type">
+            <legend>Search by:</legend>
+
+            <label class="radio-option">
+              <input type="radio" id="byCity" name="searchType" value="city" checked />
+              <span>City</span>
+            </label>
+
+            <label class="radio-option">
+              <input type="radio" id="byZip" name="searchType" value="zip" />
+              <span>Zip Code</span>
+            </label>
+          </fieldset>
+
+          <!-- City -->
+          <div class="form-row">
+            <label for="city">City</label>
+            <input
+              type="text"
+              id="city"
+              name="city"
+              required
+              placeholder="e.g., Baltimore"
+            />
+          </div>
+
+          
+          <div class="form-row">
+            <label for="zipCode">Zip Code</label>
+            <input
+              type="text"
+              id="zipCode"
+              name="zipCode"
+              disabled
+              placeholder="e.g., 21201"
+            />
+          </div>
+
+       
+          <div class="form-row">
+            <label for="radius">Radius (miles)</label>
+            <input
+              type="number"
+              id="radius"
+              name="radius"
+              required
+              min="1"
+              max="100"
+              placeholder="25"
+            />
+          </div>
+
+          <button type="submit" class="btn-primary">Search Events</button>
+        </form>
+      </section>
+
+      <section class="card card-results">
+        <h2 class="card-title">Events In This Area</h2>
+        <p id="results-hint" class="muted">
+          Enter a location and radius above to see upcoming events.
+        </p>
+        <ul id="events" class="events-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Data from Ticketmaster Discovery API</p>
+    </footer>
+  </div>
+</body>
+</html>
