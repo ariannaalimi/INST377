@@ -1,0 +1,29 @@
+<html>
+
+    <head>
+        <title>INST377 - Lab6</title>
+
+        <script src = "lab7.js" defer></script>
+
+    </head>
+
+    <body>
+        <h1>Let's Lookup some Books</h1>
+
+        <h3>Please enter a book name:</h3>
+        <form onsubmit="return false">
+            <input type="text" id="bookname">
+            <button type="submit" onclick="loadUpSite()">Search</button>
+        </form>
+        <h1 id="placeholderText"></h1>
+        <table style="display: none;" id="bookTable">
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+            </tr>
+        </table>
+    </body>
+
+
+
+</html>
