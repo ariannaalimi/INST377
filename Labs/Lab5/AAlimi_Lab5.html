@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>INST377 - Lab5</title>
+    <script defer type="text/javascript" src="AAlimi_Lab5.js"></script>
+    <style>
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Let's Covert Some Currency!</h1>
+    <form id="currencyForm" onsubmit="iterateJson();return false;">
+        <label for="fromCurrencyId">From Currency: </label>
+        <select id="fromCurrencyId"></select>
+        <br>
+
+        <label for = "toCurrencyId">To Currency: </label>
+        <select id="toCurrencyId"></select>
+        <br>
+
+        <label for ="numberConvertId">Number to Convert: </label>
+        <input type="number" id="numberConvertId" step="0.01" required>
+        <br>
+
+        <input type="submit" value = "Convert">
+    </form>
+    <h2 id="result"></h2>
+</body>
+
+</html>
